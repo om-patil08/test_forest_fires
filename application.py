@@ -11,7 +11,7 @@ app=application
 ridge_model=pickle.load(open('models/ridge.pkl','rb'))
 standard_scaler=pickle.load(open('models/scaler.pkl','rb'))
 
-
+    
 @app.route("/")
 def hello_world():
     return render_template('home.html')
